@@ -1,0 +1,20 @@
+{
+  "name": "event-booking-platform-tests",
+  "version": "1.0.0",
+  "description": "Tests for Event Booking Platform",
+  "main": "test-user-service.js",
+  "scripts": {
+    "test:user": "node test-user-service.js",
+    "test:booking": "node test-booking-service.js",
+    "test:event": "node test-event-service.js",
+    "test:notification": "node test-notification-service.js",
+    "test": "npm run test:user && npm run test:booking && npm run test:event && npm run test:notification",
+    "test:report": "node test-report.js",
+    "test:load": "node load-test-booking.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "axios": "^1.8.1",
+    "uuid": "^9.0.1"
+  }
+}
