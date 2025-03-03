@@ -1,6 +1,10 @@
 import os
 from jira import JIRA
 from github import Github
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Retrieve environment variables
 jira_server = os.getenv('JIRA_BASE_URL')
